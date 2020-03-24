@@ -1,0 +1,23 @@
+{
+  "name": "pricing-component-with-toggle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "compile-sass": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JocheAttah/Pricing-component-with-toggle.git"
+  },
+  "author": "Attah David",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JocheAttah/Pricing-component-with-toggle/issues"
+  },
+  "homepage": "https://github.com/JocheAttah/Pricing-component-with-toggle#readme"
+}
