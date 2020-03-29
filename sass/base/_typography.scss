@@ -1,0 +1,21 @@
+body{
+    font-family: "Montserrat", "lato";
+    font-weight: 700;
+}
+
+
+
+.heading {
+    &__text{
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+}
+
+.toggle{
+    &__text{
+        font-size: 1rem;
+        padding: 0 1rem;
+
+    }
+}

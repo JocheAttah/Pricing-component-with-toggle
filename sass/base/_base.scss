@@ -1,14 +1,15 @@
 
 :root{
     --color-primaryBackGround : hsl(236, 72%, 79%);
-    --color-primaryLinearGradient : Linear(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    --color-primaryLinearGradient : linear-gradienti(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     --color-lighterGB: hsl(240, 78%, 98%);
     --color-lightGB: hsl(234, 14%, 74%);
     --color-grayishblue: hsl(233, 13%, 49%);
-    --color-darkGB: hsl(232, 13%, 33%)
+    --color-darkGB: hsl(232, 13%, 33%);
+    --color-white: hsl(0, 100%, 100%)
 }
 
-
+v
 *,
 *::before,
 *::after {
@@ -18,6 +19,5 @@
 }
 
 body{
-    font-size: 62.5%; // 1 rem = 10px;
-     
+    font-size: 62.5%; // 1 rem = 10px;     
 }

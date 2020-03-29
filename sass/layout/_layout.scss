@@ -18,6 +18,36 @@ body{
         top: 44rem;
         left: 0;
     }
-
-
 }
+
+
+.container{
+    max-width: 80rem;
+    height: 60rem;
+    margin: 0 auto;
+    // background-color: cadetblue;   
+}
+
+ .cards{     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+
+
+     &__card{
+        width: 45rem;
+        height: 29rem;
+        background-color: var(--color-white);  
+        border-radius: 1rem;
+        box-shadow: 0 .2rem 3rem rgba(179, 181, 198,.3);
+
+        z-index: 1000;
+
+
+        &--2{
+            height: 32rem;
+            background-image: var(--color-primaryLinearGradient);
+        }
+     }
+ }

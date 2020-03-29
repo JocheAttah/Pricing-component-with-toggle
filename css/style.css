@@ -1,12 +1,14 @@
 :root {
   --color-primaryBackGround: hsl(236, 72%, 79%);
-  --color-primaryLinearGradient: Linear(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --color-primaryLinearGradient: linear-gradienti(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   --color-lighterGB: hsl(240, 78%, 98%);
   --color-lightGB: hsl(234, 14%, 74%);
   --color-grayishblue: hsl(233, 13%, 49%);
-  --color-darkGB: hsl(232, 13%, 33%)
+  --color-darkGB: hsl(232, 13%, 33%);
+  --color-white: hsl(0, 100%, 100%)
 ; }
 
+v
 *,
 *::before,
 *::after {
@@ -16,6 +18,27 @@
 
 body {
   font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", "lato";
+  font-weight: 700; }
+
+.heading__text {
+  font-size: 2rem;
+  letter-spacing: 1px; }
+
+.toggle__text {
+  font-size: 1rem;
+  padding: 0 1rem; }
+
+.heading__text {
+  text-align: center;
+  padding-top: 5rem; }
+
+.toggle {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 5rem; }
 
 body {
   width: 100vw;
@@ -32,3 +55,23 @@ body {
     position: absolute;
     top: 44rem;
     left: 0; }
+
+.container {
+  max-width: 80rem;
+  height: 60rem;
+  margin: 0 auto; }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .cards__card {
+    width: 45rem;
+    height: 29rem;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 3rem rgba(179, 181, 198, 0.3);
+    z-index: 1000; }
+    .cards__card--2 {
+      height: 32rem;
+      background-image: var(--color-primaryLinearGradient); }
