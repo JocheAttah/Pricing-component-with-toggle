@@ -1,0 +1,29 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        text-align: center;
+        font-size-adjust: 0.9rem;
+        height: 2rem;
+
+
+
+        &--white{
+            background-color: var(--color-lighterGB);
+            color: red;
+        }
+
+        &--color{
+            background-image: var(--color-primaryLinearGradient);
+            color: white;
+        }
+
+    }
+}

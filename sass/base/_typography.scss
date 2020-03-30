@@ -15,7 +15,59 @@ body{
 .toggle{
     &__text{
         font-size: 1rem;
-        padding: 0 1rem;
+        // padding: 0 1rem;
 
     }
+}
+
+
+.cards{
+    color: var(--color-grayishblue);
+
+    &__card--2{
+        color: var(--color-lighterGB);
+    }
+
+    &__cardHeader{
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 3.5rem;
+
+        // margin-bottom: 0;
+    }
+
+
+    &__cardPrice{
+        color: var(--color-darkGB);
+        font-size: 4.5rem;
+        font-weight: 700;
+        margin: 1.5rem; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--two{
+            color: var(--color-lighterGB);
+        }
+
+        &--currency{            
+            font-size: 2.5rem;
+            margin-right: 1rem; 
+            
+            &--two{
+                color: var(--color-lighterGB);
+            }
+        }
+    }
+
+    &__cardList{
+        color: var(--color-grayishblue);
+        font-size: 0.9rem;
+
+        &--two{
+            color: var(--color-lighterGB);
+        }
+        
+
+}
 }
