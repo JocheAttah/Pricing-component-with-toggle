@@ -1,5 +1,6 @@
 :root {
   --color-primaryBackGround: hsl(236, 72%, 79%);
+  --color-secondaryBackGround: hsl(237, 63%, 64%);
   --color-primaryLinearGradient: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   --color-lighterGB: hsl(240, 78%, 98%);
   --color-lightGB: hsl(234, 14%, 74%);
@@ -39,7 +40,7 @@ body {
     text-align: center;
     margin-top: 3.5rem; }
     .cards__cardHeader--two {
-      margin-top: 5rem; }
+      margin-top: 5.5rem; }
   .cards__cardPrice {
     color: var(--color-darkGB);
     font-size: 4.5rem;
@@ -75,9 +76,21 @@ body {
   border: none;
   cursor: pointer; }
 
+.btn:hover {
+  background-color: transparent;
+  background-image: none;
+  color: var(--color-secondaryBackGround);
+  border: 1px solid var(--color-secondaryBackGround); }
+
+.btn:active, .btn:focus {
+  outline: none; }
+
 .btn--white {
   background-color: var(--color-lighterGB);
-  color: var(--color-primaryBackGround); }
+  color: var(--color-secondaryBackGround); }
+  .btn--white:hover {
+    color: var(--color-lighterGB);
+    border: 1px solid var(--color-lighterGB); }
 
 .btn--color {
   background-image: var(--color-primaryLinearGradient);
@@ -107,16 +120,18 @@ body {
       flex-wrap: wrap;
       list-style: none;
       margin: 0 auto; }
-    .cards__cardList ul > li.two {
-      border-bottom: 1px solid var(--color-lighterGB); }
     .cards__cardList li {
       width: 80%;
       align-self: center;
       text-align: center;
       padding: 1rem 0;
       border-bottom: 1px solid var(--color-lightGB); }
-    .cards__cardList--listTwo {
+      .cards__cardList li:first-child {
+        border-top: 1px solid var(--color-lightGB); }
+    .cards__cardList ul > li.two {
       border-bottom: 1px solid var(--color-lighterGB); }
+      .cards__cardList ul > li.two:first-child {
+        border-top: 1px solid var(--color-lighterGB); }
 
 .heading__text {
   text-align: center; }

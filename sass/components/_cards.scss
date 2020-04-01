@@ -35,20 +35,26 @@
            margin: 0 auto;          
        }
 
-       ul > li.two{
-           border-bottom: 1px solid var(--color-lighterGB);
-       }
-
+       
        li{
            width: 80%;
            align-self: center;
            text-align: center;
            padding: 1rem 0;
            border-bottom: 1px solid var(--color-lightGB);
-       }    
-       
-       &--listTwo{
-           border-bottom: 1px solid var(--color-lighterGB);
+
+           &:first-child{
+            border-top: 1px solid var(--color-lightGB);
+        }
        }
+       
+       ul > li.two{
+        border-bottom: 1px solid var(--color-lighterGB);
+      
+        &:first-child{
+         border-top: 1px solid var(--color-lighterGB);
+     }
+    }
+
 }
 }

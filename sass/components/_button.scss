@@ -19,14 +19,35 @@
          cursor: pointer;
     }
 
+
+    &:hover{
+        background-color: transparent;
+        background-image: none;
+        color: var(--color-secondaryBackGround);
+        border: 1px solid var(--color-secondaryBackGround);        
+    }
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    
     &--white{
         background-color: var(--color-lighterGB);
-        color: var(--color-primaryBackGround);
+        color: var(--color-secondaryBackGround);
+
+        &:hover{
+            color: var(--color-lighterGB);
+            border: 1px solid var(--color-lighterGB);
+        }
     }
 
     &--color{
         background-image: var(--color-primaryLinearGradient);
-        color: white;
+        color: white;        
     }
+
+    
 }
 
