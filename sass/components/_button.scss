@@ -2,28 +2,31 @@
     &,
     &:link,
     &:visited{
-        padding: 1rem 1.5rem;
+        padding: .5rem 1.5rem;
         text-decoration: none;
         text-transform: uppercase;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80%;
-        text-align: center;
-        font-size-adjust: 0.9rem;
+        
+        margin: 3rem 2.3rem;
+        font-size: .9rem;
+        border-radius: .3rem;
+
         height: 2rem;
+         //change for he <button> element
+         border:none;
+         cursor: pointer;
+    }
 
+    &--white{
+        background-color: var(--color-lighterGB);
+        color: var(--color-primaryBackGround);
+    }
 
-
-        &--white{
-            background-color: var(--color-lighterGB);
-            color: red;
-        }
-
-        &--color{
-            background-image: var(--color-primaryLinearGradient);
-            color: white;
-        }
-
+    &--color{
+        background-image: var(--color-primaryLinearGradient);
+        color: white;
     }
 }
+

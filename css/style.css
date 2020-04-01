@@ -60,22 +60,26 @@ body {
       color: var(--color-lighterGB); }
 
 .btn, .btn:link, .btn:visited {
-  padding: 1rem 1.5rem;
+  padding: .5rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  text-align: center;
-  font-size-adjust: 0.9rem;
-  height: 2rem; }
-  .btn--white, .btn:link--white, .btn:visited--white {
-    background-color: var(--color-lighterGB);
-    color: red; }
-  .btn--color, .btn:link--color, .btn:visited--color {
-    background-image: var(--color-primaryLinearGradient);
-    color: white; }
+  margin: 3rem 2.3rem;
+  font-size: .9rem;
+  border-radius: .3rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer; }
+
+.btn--white {
+  background-color: var(--color-lighterGB);
+  color: var(--color-primaryBackGround); }
+
+.btn--color {
+  background-image: var(--color-primaryLinearGradient);
+  color: white; }
 
 .heading__text {
   text-align: center; }
