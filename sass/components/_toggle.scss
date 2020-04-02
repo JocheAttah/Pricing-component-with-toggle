@@ -1,10 +1,30 @@
 .toggle{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 5rem;
 
-    &__text{
-        padding: 0 1rem;
+    &__switch{
+        cursor: pointer;
+        display: inline-flex;
+        align-content: center;
     }
 
+    &__slider{
+        width: 4rem;
+        height: 2rem;
+        background-image: var(--color-primaryLinearGradient);
+        border-radius: 1rem;
+        // display: inline-block;
+
+
+
+        &::after{
+            content: "";
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            background-color: var(--color-lighterGB);
+            display: inline-flex;
+            top: 2rem; 
+
+git
+        }
+    }
 }

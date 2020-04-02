@@ -10,19 +10,32 @@
     <title>PCWT</title>
 </head>
 <body>
+
+
     <div class="bkgd">
         <img src="./images/bg-top.svg" alt="svg top" class="bkgd__top">
         <img src="./images/bg-bottom.svg" alt="svg bottom" class="bkgd__bottom">
     </div>
+    
     <div class="container">       
         <div class="heading__box"> 
             <h3 class="heading__text">Our Pricing</h3>
         </div>
+        
+        
+        
         <div class="toggle">
             <span class="toggle__text">Annually</span>
-            <input type="checkbox" name="" class="toggle__switch">
+                <input type="checkbox" name="" id="toggleSwitch" class="toggle__input">
+                <label class="toggle__switch" for="toggleSwitch">
+                    <span class="toggle__slider"> </span>
+                </label>
             <span class="toggle__text">Monthly</span>
         </div>
+
+
+
+
         <div class="cards">
             <div class="cards__card">
                 <h3 class="cards__cardHeader">Basic</h3>

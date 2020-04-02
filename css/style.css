@@ -29,7 +29,8 @@ body {
   letter-spacing: 1px; }
 
 .toggle__text {
-  font-size: 1rem; }
+  font-size: 1rem;
+  padding: 0 1rem; }
 
 .cards {
   color: var(--color-grayishblue); }
@@ -133,20 +134,32 @@ body {
       .cards__cardList ul > li.two:first-child {
         border-top: 1px solid var(--color-lighterGB); }
 
-.heading__text {
-  text-align: center; }
+.toggle__switch {
+  cursor: pointer;
+  display: inline-flex;
+  align-content: center; }
 
-.toggle {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 5rem; }
-  .toggle__text {
-    padding: 0 1rem; }
+.toggle__slider {
+  width: 4rem;
+  height: 2rem;
+  background-image: var(--color-primaryLinearGradient);
+  border-radius: 1rem; }
+  .toggle__slider::after {
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--color-lighterGB);
+    display: inline-flex;
+    top: 2rem; }
 
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--color-lighterGB); }
+  background-color: var(--color-lighterGB);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .bkgd__top {
   position: absolute;
@@ -160,5 +173,13 @@ body {
 
 .container {
   max-width: 80rem;
-  height: 60rem;
-  margin: 0 auto; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.heading__box {
+  margin-top: 2rem; }
+
+.toggle {
+  margin-bottom: 5rem;
+  align-self: center; }
