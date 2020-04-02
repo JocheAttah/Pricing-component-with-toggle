@@ -1,19 +1,32 @@
 .toggle{
+    display: inline-flex;
+    align-items: center;
+
+    &__text{
+        
+
+    }
+
+    &__input{
+        display: none;
+    }
 
     &__switch{
         cursor: pointer;
-        display: inline-flex;
-        align-content: center;
+        align-self: flex-start;
     }
 
     &__slider{
-        width: 4rem;
+        width: 3.5rem;
         height: 2rem;
         background-image: var(--color-primaryLinearGradient);
         border-radius: 1rem;
-        // display: inline-block;
+        display: inline-flex;
 
+        
 
+        
+        
 
         &::after{
             content: "";
@@ -21,10 +34,16 @@
             width: 1.5rem;
             border-radius: 50%;
             background-color: var(--color-lighterGB);
-            display: inline-flex;
-            top: 2rem; 
+            margin-top: 3.5px;
+            margin-left: 3px;
+            transition: all .3s;
 
-git
         }
+    }
+
+
+    &__input:checked ~ &__switch &__slider::after{
+        transform: translateX(1.5rem);
+
     }
 }

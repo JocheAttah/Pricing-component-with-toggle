@@ -2,6 +2,7 @@
   --color-primaryBackGround: hsl(236, 72%, 79%);
   --color-secondaryBackGround: hsl(237, 63%, 64%);
   --color-primaryLinearGradient: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --color-primaryLinearHover: linear-gradient(135deg, hsl(236, 71%, 84%), hsl(237, 51%, 69%));
   --color-lighterGB: hsl(240, 78%, 98%);
   --color-lightGB: hsl(234, 14%, 74%);
   --color-grayishblue: hsl(233, 13%, 49%);
@@ -26,11 +27,13 @@ body {
 
 .heading__text {
   font-size: 2rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  color: var(--color-darkGB); }
 
 .toggle__text {
   font-size: 1rem;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  color: var(--color-lightGB); }
 
 .cards {
   color: var(--color-grayishblue); }
@@ -134,24 +137,31 @@ body {
       .cards__cardList ul > li.two:first-child {
         border-top: 1px solid var(--color-lighterGB); }
 
-.toggle__switch {
-  cursor: pointer;
+.toggle {
   display: inline-flex;
-  align-content: center; }
-
-.toggle__slider {
-  width: 4rem;
-  height: 2rem;
-  background-image: var(--color-primaryLinearGradient);
-  border-radius: 1rem; }
-  .toggle__slider::after {
-    content: "";
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 50%;
-    background-color: var(--color-lighterGB);
-    display: inline-flex;
-    top: 2rem; }
+  align-items: center; }
+  .toggle__input {
+    display: none; }
+  .toggle__switch {
+    cursor: pointer;
+    align-self: flex-start; }
+  .toggle__slider {
+    width: 3.5rem;
+    height: 2rem;
+    background-image: var(--color-primaryLinearGradient);
+    border-radius: 1rem;
+    display: inline-flex; }
+    .toggle__slider::after {
+      content: "";
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 50%;
+      background-color: var(--color-lighterGB);
+      margin-top: 3.5px;
+      margin-left: 3px;
+      transition: all .3s; }
+  .toggle__input:checked ~ .toggle__switch .toggle__slider::after {
+    transform: translateX(1.5rem); }
 
 body {
   width: 100vw;
@@ -181,5 +191,4 @@ body {
   margin-top: 2rem; }
 
 .toggle {
-  margin-bottom: 5rem;
-  align-self: center; }
+  margin-bottom: 5rem; }
