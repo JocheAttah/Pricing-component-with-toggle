@@ -1,3 +1,14 @@
+/*
+    0- 600px   phone
+    600- 900   Tab-port
+    900- 1200  Tab-land
+    1200-1800      this is our normal style
+    1800 - :     Big Desktop
+
+ORDER: Base + typography  > 
+general layout(header etc)  > 
+grid > page layout > components
+*/
 :root {
   --color-primaryBackGround: hsl(236, 72%, 79%);
   --color-secondaryBackGround: hsl(237, 63%, 64%);
@@ -10,7 +21,6 @@
   --color-white: hsl(0, 100%, 100%)
 ; }
 
-v
 *,
 *::before,
 *::after {
