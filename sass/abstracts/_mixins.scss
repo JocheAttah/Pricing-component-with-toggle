@@ -22,10 +22,10 @@ grid > page layout > components
         @media(max-width: 56.25em){@content}; // width < 900px  ie 1em = 16px ; 900px/ 16px = 56.25em 
     }
     @if $breakpoint == tab-land {
-        @media(max-width: 87.5em){@content}; // width < 1200px  ie 1em = 16px ; 1400px/ 16px = 75em 
+        @media(max-width: 93.75em){@content}; // width < 1500px  ie 1em = 16px ; 1500px/ 16px = 93.75em
     }
     @if $breakpoint == big-desktop {
-        @media(min-width: 112.5em){@content}; // width < 1800px  ie 1em = 16px ; 1800px/ 16px = 112.5em 
+        @media(min-width: 121.875em){@content}; // width > 1950px  ie 1em = 16px ; 1950px/ 16px = 121.875em 
     }
 
 }

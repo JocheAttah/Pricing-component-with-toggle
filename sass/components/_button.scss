@@ -17,6 +17,10 @@
          //change for he <button> element
          border:none;
          cursor: pointer;
+         
+         @include respond(tab-land){
+            margin: 3rem 2.3rem;           
+        }
     }
 
 

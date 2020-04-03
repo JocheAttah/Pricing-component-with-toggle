@@ -13,12 +13,33 @@ body{
         position: absolute;
         top: 0;
         right: 0;
+
+
+                
+        @include respond(phone){
+            top: 0;
+            right: -12rem;
+        }
+        
+        @include respond(small-phone){
+            top: -5.2rem;
+            right: -11rem;
+
+        }
     }
     
     &__bottom{
         position: absolute;
         top: 44rem;
         left: 0;
+
+        
+        @include respond(tab-land){
+            top: 93rem;
+            left: 0;            
+        }
+        
+        
     }
 }
 
@@ -28,14 +49,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include respond(small-phone){
+        max-width: 100%;
+    }
 }
 
 .heading__box{
-    margin-top: 2rem;
+    margin: 2rem 0 2rem 0;
 }
 
 .toggle{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+
+    @include respond(big-desktop){
+        margin-bottom: 5rem ;
+    }
 }
 
 

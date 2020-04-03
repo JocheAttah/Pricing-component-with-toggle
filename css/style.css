@@ -50,11 +50,7 @@ body {
   .cards__card--2 {
     color: var(--color-lighterGB); }
   .cards__cardHeader {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 3.5rem; }
-    .cards__cardHeader--two {
-      margin-top: 5.5rem; }
+    font-size: 1.2rem; }
   .cards__cardPrice {
     color: var(--color-darkGB);
     font-size: 4.5rem;
@@ -89,6 +85,9 @@ body {
   height: 2rem;
   border: none;
   cursor: pointer; }
+  @media (max-width: 93.75em) {
+    .btn, .btn:link, .btn:visited {
+      margin: 3rem 2.3rem; } }
 
 .btn:hover {
   background-color: transparent;
@@ -114,15 +113,39 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 56.25em) {
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
+  .cards__cardHeader {
+    text-align: center;
+    margin-top: 1.5rem; }
+    .cards__cardHeader--two {
+      margin-top: 3.5rem; }
+      @media (max-width: 56.25em) {
+        .cards__cardHeader--two {
+          margin-top: 1.5rem; } }
   .cards__card {
     width: 24rem;
+    height: 30rem;
     background-color: var(--color-white);
     border-radius: 1rem;
     box-shadow: 0 0.2rem 3rem rgba(179, 181, 198, 0.3);
     z-index: 1000; }
     .cards__card--2 {
-      height: 36rem;
+      height: 34rem;
       background-image: var(--color-primaryLinearGradient); }
+      @media (max-width: 93.75em) {
+        .cards__card--2 {
+          height: 34rem; } }
+      @media (max-width: 56.25em) {
+        .cards__card--2 {
+          height: 30rem; } }
+    @media (max-width: 56.25em) {
+      .cards__card {
+        margin-bottom: 2.5rem; } }
   .cards__cardList {
     width: 100%; }
     .cards__cardList ul {
@@ -185,20 +208,38 @@ body {
   position: absolute;
   top: 0;
   right: 0; }
+  @media (max-width: 37.5em) {
+    .bkgd__top {
+      top: 0;
+      right: -12rem; } }
+  @media (max-width: 26.25em) {
+    .bkgd__top {
+      top: -5.2rem;
+      right: -11rem; } }
 
 .bkgd__bottom {
   position: absolute;
   top: 44rem;
   left: 0; }
+  @media (max-width: 93.75em) {
+    .bkgd__bottom {
+      top: 93rem;
+      left: 0; } }
 
 .container {
   max-width: 80rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media (max-width: 26.25em) {
+    .container {
+      max-width: 100%; } }
 
 .heading__box {
-  margin-top: 2rem; }
+  margin: 2rem 0 2rem 0; }
 
 .toggle {
-  margin-bottom: 5rem; }
+  margin-bottom: 2rem; }
+  @media (min-width: 121.875em) {
+    .toggle {
+      margin-bottom: 5rem; } }
