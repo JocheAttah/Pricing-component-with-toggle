@@ -13,18 +13,22 @@ body{
         position: absolute;
         top: 0;
         right: 0;
-
-
                 
+        @include respond(tab-port){
+            // display: none;
+            top: -5.6rem;
+            right: 0;
+        }
         @include respond(phone){
             top: 0;
-            right: -12rem;
+            right: 0;
+            width: 30%;
+            height: 48%;
         }
-        
-        @include respond(small-phone){
-            top: -5.2rem;
-            right: -11rem;
-
+        @include respond (big-desktop){
+            top: 0;
+            right:0;
+            width: 20%
         }
     }
     
@@ -35,8 +39,18 @@ body{
 
         
         @include respond(tab-land){
+            top: 30rem;
+            left: 0;            
+        }
+        @include respond(tab-port){
             top: 93rem;
             left: 0;            
+        }
+
+        @include respond (big-desktop){
+            top: 44rem;
+            left:0;
+            width: 26%
         }
         
         

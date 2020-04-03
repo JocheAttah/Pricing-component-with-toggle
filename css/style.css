@@ -208,14 +208,21 @@ body {
   position: absolute;
   top: 0;
   right: 0; }
+  @media (max-width: 56.25em) {
+    .bkgd__top {
+      top: -5.6rem;
+      right: 0; } }
   @media (max-width: 37.5em) {
     .bkgd__top {
       top: 0;
-      right: -12rem; } }
-  @media (max-width: 26.25em) {
+      right: 0;
+      width: 30%;
+      height: 48%; } }
+  @media (min-width: 121.875em) {
     .bkgd__top {
-      top: -5.2rem;
-      right: -11rem; } }
+      top: 0;
+      right: 0;
+      width: 20%; } }
 
 .bkgd__bottom {
   position: absolute;
@@ -223,8 +230,17 @@ body {
   left: 0; }
   @media (max-width: 93.75em) {
     .bkgd__bottom {
+      top: 30rem;
+      left: 0; } }
+  @media (max-width: 56.25em) {
+    .bkgd__bottom {
       top: 93rem;
       left: 0; } }
+  @media (min-width: 121.875em) {
+    .bkgd__bottom {
+      top: 44rem;
+      left: 0;
+      width: 26%; } }
 
 .container {
   max-width: 80rem;

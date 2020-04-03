@@ -2,11 +2,6 @@
     display: inline-flex;
     align-items: center;
 
-    &__text{
-        
-
-    }
-
     &__input{
         display: none;
     }
@@ -21,12 +16,7 @@
         height: 2rem;
         background-image: var(--color-primaryLinearGradient);
         border-radius: 1rem;
-        display: inline-flex;
-
-        
-
-        
-        
+        display: inline-flex;  
 
         &::after{
             content: "";
@@ -37,7 +27,6 @@
             margin-top: 3.5px;
             margin-left: 3px;
             transition: all .3s;
-
         }
     }
 
