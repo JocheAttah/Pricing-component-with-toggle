@@ -7,14 +7,21 @@ toggleInput.addEventListener('click', checkInput);
 
 function checkInput(){
     if (toggleInput.checked ){
-        cardPrice1.innerHTML = '<span class="cards__cardPrice--currency" >$</span>199.99';
-        cardPrice2.innerHTML = '<span class="cards__cardPrice--currency  cards__cardPrice--currency--two" >$</span>249.99';
-        cardPrice3.innerHTML = '<span class="cards__cardPrice--currency" >$</span>399.99';
+        inputTrueCheck()        
     }else{
-        cardPrice1.innerHTML = '<span class="cards__cardPrice--currency" >$</span>19.99';
-        cardPrice2.innerHTML = '<span class="cards__cardPrice--currency  cards__cardPrice--currency--two" >$</span>24.99';
-        cardPrice3.innerHTML = '<span class="cards__cardPrice--currency" >$</span>39.99';
+        inputFalseCheck()    
     }
 }
 
 
+function inputTrueCheck(){
+    cardPrice1.innerHTML = '<span class="cards__cardPrice--currency" >$</span>199.99';
+        cardPrice2.innerHTML = '<span class="cards__cardPrice--currency  cards__cardPrice--currency--two" >$</span>249.99';
+        cardPrice3.innerHTML = '<span class="cards__cardPrice--currency" >$</span>399.99';
+}
+
+function inputFalseCheck(){
+    cardPrice1.innerHTML = '<span class="cards__cardPrice--currency" >$</span>19.99';
+        cardPrice2.innerHTML = '<span class="cards__cardPrice--currency  cards__cardPrice--currency--two" >$</span>24.99';
+        cardPrice3.innerHTML = '<span class="cards__cardPrice--currency" >$</span>39.99';
+}
