@@ -243,6 +243,7 @@ body {
       width: 26%; } }
 
 .container {
+  margin-top: 2rem;
   max-width: 80rem;
   display: flex;
   flex-direction: column;
