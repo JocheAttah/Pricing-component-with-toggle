@@ -27,5 +27,10 @@ Below are my designs:
 ![Desktop View (1920 x 1080)](./completed/Sizzy-Desktop.png)
 
 
+## Please Give me feedback
+
+Your Feedback is very important to me and always welcome. please if you have any to give on this project's challenge please email jocheattahdavid[at]gmail[dot]com
+
+
 
 **Have fun Using this!** 🚀
